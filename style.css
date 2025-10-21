@@ -1,0 +1,157 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --box-color: #f2f2f2;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f2f2f2;
+  --box-color: #1f1f1f;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.converter {
+  width: 340px;
+  background-color: var(--box-color);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background-color 0.4s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#themeToggle:hover {
+  transform: rotate(20deg);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.select-box {
+  flex: 1;
+  background-color: var(--bg-color);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.select-box img {
+  width: 25px;
+  height: 20px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+select {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: var(--text-color);
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark select {
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+}
+
+body.dark .select-box {
+  border: 1px solid #555;
+  background-color: #2c2c2c;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.4s ease;
+}
+
+.update-time {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+/* Convert button base style */
+#convertBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (light mode) */
+#convertBtn:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+/* 🌙 Glowing effect in dark mode */
+body.dark #convertBtn {
+  background-color: #2196f3;
+  box-shadow: 0 0 15px rgba(33, 150, 243, 0.6);
+}
+
+/* Hover effect in dark mode */
+body.dark #convertBtn:hover {
+  box-shadow: 0 0 25px rgba(33, 150, 243, 0.9);
+  transform: scale(1.05);
+}
+
+

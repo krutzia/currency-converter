@@ -38,7 +38,7 @@ currency-converter/
 ## 🚀 How to Use
 
 1. Clone the repository
-   git clone https://github.com/yourusername/currency-converter.git
+   git clone https://github.com/krutzia/currency-converter.git
    cd currency-converter
 
 2. Open the project

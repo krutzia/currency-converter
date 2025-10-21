@@ -6,11 +6,6 @@ A modern and responsive **Currency Converter Web App** that allows users to conv
 
 ---
 
-## Preview
-![Currency Converter Preview](assets/images/preview.png)
-
----
-
 ## ✨ Features
 - 🌎 **Supports all global currencies**
 - 💹 **Live exchange rates** powered by [ExchangeRate.host](https://exchangerate.host)
